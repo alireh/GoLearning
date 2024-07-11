@@ -8,7 +8,7 @@ func TestLabeledLoop() {
 	fmt.Println("----------------------------------------Start LabeledLoop----------------------------------------")
 	letters := []string{"a", "b", "c"}
 
-	fmt.Println("***************************************1")
+	fmt.Println("                                    ***********             A            *********\n")
 	for j := 1; j < 3; j++ {
 
 		fmt.Println("" + fmt.Sprintf("%d", j))
@@ -28,7 +28,7 @@ func TestLabeledLoop() {
 		}
 	}
 
-	fmt.Println("***************************************2")
+	fmt.Println("                                    ***********             B            *********\n")
 	for j := 1; j < 3; j++ {
 
 		fmt.Println("" + fmt.Sprintf("%d", j))

@@ -11,7 +11,7 @@ func TestRange() {
 	//With index and value
 
 	fmt.Println("Both Index and Value of []string{\"a\", \"b\", \"c\"}")
-	fmt.Println("***************************************1")
+	fmt.Println("                                    ***********             A            *********\n")
 
 	for i, letter := range letters {
 
@@ -22,13 +22,13 @@ func TestRange() {
 	//Only value
 
 	fmt.Println("\nOnly value")
-	fmt.Println("***************************************2")
+	fmt.Println("                                    ***********             B            *********\n")
 
 	for _, letter := range letters {
 		fmt.Printf("Value: %s\n", letter)
 	}
 
-	fmt.Println("***************************************3")
+	fmt.Println("                                    ***********             C            *********\n")
 	sample := map[string]string{
 		"key 1": "Value 1",
 		"Key 2": "Value 2",
@@ -52,7 +52,7 @@ func TestRange() {
 		fmt.Printf("value :%s\n", v)
 	}
 
-	fmt.Println("***************************************4")
+	fmt.Println("                                    ***********             D            *********\n")
 	str := "abz"
 
 	//With index and value

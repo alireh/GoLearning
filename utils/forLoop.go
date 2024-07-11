@@ -12,7 +12,7 @@ func TestForLoop() {
 		println(message)
 	}
 
-	fmt.Println("***************************************1")
+	fmt.Println("                                    ***********             A            *********\n")
 
 	j := 1
 
@@ -23,7 +23,7 @@ func TestForLoop() {
 
 	}
 
-	fmt.Println("***************************************2")
+	fmt.Println("                                    ***********             B            *********\n")
 
 	sum := 0
 

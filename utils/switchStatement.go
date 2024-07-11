@@ -6,7 +6,7 @@ import (
 
 func TestSwitchStatement() {
 	fmt.Println("----------------------------------------Start Switch Statement----------------------------------------")
-	fmt.Println("***************************************1")
+	fmt.Println("                                    ***********             A            *********\n")
 	switch ch := "b"; ch {
 	case "a":
 		fmt.Println("a")
@@ -18,7 +18,7 @@ func TestSwitchStatement() {
 		fmt.Println("No matching character")
 	}
 
-	fmt.Println("***************************************2")
+	fmt.Println("                                    ***********             B            *********\n")
 	var dayOfWeek int
 
 	fmt.Printf("Enter a day of week: ")
