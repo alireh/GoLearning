@@ -1,8 +1,9 @@
-package utils
+package basic
 
 /**هر پکیج باید حتما در فولدر جداگانه باشد */
 import (
 	"fmt"
+
 )
 
 func TestForLoop() {
