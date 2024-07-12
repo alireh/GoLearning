@@ -23,6 +23,7 @@ func main() {
 	// basic.TestLabeledLoop()
 	// basic.TestContinueInLoop()
 	// basic.TestSwitchStatement()
-	basic.TestVariable()
+	// basic.TestVariable()
+	basic.TestFunction()
 
 }
