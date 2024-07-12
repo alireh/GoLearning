@@ -1,7 +1,8 @@
 // پکیج main به عنوان یک پکیج منحصر به فرد در نظر گرفته شده است
 package main
 
-import "learning/basic"
+//basicFunctions is alias
+import basicFunctions "learning/basic"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
@@ -18,12 +19,13 @@ func init() {
 //main
 //بیاید نه در خط بعدی
 func main() {
+	/*TestForLoop باید با حروف بزرگ شروع شود تا پابلیک باشد*/
 	// basic.TestForLoop()
 	// basic.TestRange()
 	// basic.TestLabeledLoop()
 	// basic.TestContinueInLoop()
 	// basic.TestSwitchStatement()
 	// basic.TestVariable()
-	basic.TestFunction()
-
+	// basicFunctions.TestFunction()
+	basicFunctions.TestArray()
 }
