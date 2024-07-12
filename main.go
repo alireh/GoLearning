@@ -27,5 +27,6 @@ func main() {
 	// basic.TestSwitchStatement()
 	// basic.TestVariable()
 	// basicFunctions.TestFunction()
-	basicFunctions.TestArray()
+	// basicFunctions.TestArray()
+	basicFunctions.TestSlice()
 }
