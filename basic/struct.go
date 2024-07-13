@@ -1,6 +1,6 @@
 package basic
 
-import fmt
+import "fmt"
 
 func TestStruct() {
 	fmt.Println("----------------------------------------Start Struct----------------------------------------")
@@ -14,20 +14,20 @@ func TestStruct() {
 	type sample struct {}
 
 	 //ایجاد متغیر ساختار و مقدار دهی فیلدها 
-	emp := employee{name: "Sam", age: 31, salary: 2000}
+	// emp1 := employee{name: "Sam", age: 31, salary: 2000}
 
-	emp := employee{
-		name:   "Sam",	 
-		age:    31,	 
-		salary: 2000,	 
-	 }
+	// emp2 := employee{
+	// 	name:   "Sam",	 
+	// 	age:    31,	 
+	// 	salary: 2000,	 
+	// }
 	 //انتصاب بر اساس ترتیب
-	emp := employee{"Sam", 31, 2000}
+	emp3 := employee{"Sam", 31, 2000}
 	 //دسترسی به فیلدهای ساختار 
-    fmt.Printf("Current name is: %s\n", emp.name)
+    fmt.Printf("Current name is: %s\n", emp3.name)
 	 // تغییر فیلد
-    emp.name = "John"
-    fmt.Printf("New name is: %s\n", emp.name)
+    emp3.name = "John"
+    fmt.Printf("New name is: %s\n", emp3.name)
 
 	fmt.Println("----------------------------------------End Struct  ----------------------------------------")
 }
