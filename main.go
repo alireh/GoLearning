@@ -29,5 +29,5 @@ func main() {
 	// basicFunctions.TestFunction()
 	// basicFunctions.TestArray()
 	// basicFunctions.TestSlice()
-	basicFunctions.TestMap()
+	basicFunctions.TestMap() 
 }

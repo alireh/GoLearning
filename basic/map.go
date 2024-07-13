@@ -41,44 +41,42 @@ func TestMap() {
 	fmt.Println(organization, organizationExist) // false
 
 	fmt.Println("                                    ***********             D            *********\n")
-	var companyProfile = map[string]string{
+	var companyProfile1 = map[string]string{
 		"key1": "val1",
 		"key2": "val2",
 	}
 
-	var editorMap = companyProfile
-	fmt.Println(companyProfile["key1"], "\t", companyProfile["key2"]) //val1 	val2
-	fmt.Println(editorMap["key1"], "\t", editorMap["key2"]) //val1 	val2
+	var editorMap1 = companyProfile1
+	fmt.Println(companyProfile1["key1"], "\t", companyProfile1["key2"]) //val1 	val2
+	fmt.Println(editorMap1["key1"], "\t", editorMap1["key2"]) //val1 	val2
 
-	editorMap["key1"] = "new val1"
-	editorMap["key2"] = "new val2"
+	editorMap1["key1"] = "new val1"
+	editorMap1["key2"] = "new val2"
 
-	fmt.Println(companyProfile["key1"], "\t", companyProfile["key2"]) //new val1   new val2
-	fmt.Println(editorMap["key1"], "\t", editorMap["key2"]) //new val1 	 new val2
+	fmt.Println(companyProfile1["key1"], "\t", companyProfile1["key2"]) //new val1   new val2
+	fmt.Println(editorMap1["key1"], "\t", editorMap1["key2"]) //new val1 	 new val2
 
 	fmt.Println("                                    ***********             E            *********\n")
-	var companyProfile = map[string]string{
+	var companyProfile2 = map[string]string{
 		"name":    "companyName",
 		"address": "sampleAddress",
 	}
 
-	var editorMap = map[string]string{}
+	var editorMap2 = map[string]string{}
 
 	//copy from map to another map
-	for key, value := range companyProfile {
-		editorMap[key] = value
+	for key, value := range companyProfile2 {
+		editorMap2[key] = value
 	}	
 
-	fmt.Println(companyProfile["name"], "\t", companyProfile["address"])
-	fmt.Println(editorMap["name"], "\t", editorMap["address"])
+	fmt.Println(companyProfile2["name"], "\t", companyProfile2["address"])
+	fmt.Println(editorMap2["name"], "\t", editorMap2["address"])
 
-	editorMap["name"] = "new address"
-	editorMap["address"] = "new address"
+	editorMap2["name"] = "new address"
+	editorMap2["address"] = "new address"
 
 
-	fmt.Println(companyProfile["name"], "\t", companyProfile["address"])
-	fmt.Println(editorMap["name"], "\t", editorMap["address"])
-
-	fmt.Println("                                    ***********             F            *********\n")
+	fmt.Println(companyProfile2["name"], "\t", companyProfile2["address"])
+	fmt.Println(editorMap2["name"], "\t", editorMap2["address"])
 	fmt.Println("----------------------------------------End Map  ----------------------------------------")
 }
