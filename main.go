@@ -28,5 +28,6 @@ func main() {
 	// basic.TestVariable()
 	// basicFunctions.TestFunction()
 	// basicFunctions.TestArray()
-	basicFunctions.TestSlice()
+	// basicFunctions.TestSlice()
+	basicFunctions.TestMap()
 }
