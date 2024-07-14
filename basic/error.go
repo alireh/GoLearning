@@ -1,8 +1,10 @@
 package basic
 
-import (
+import (	
+    "errors"
 	"fmt"
 	"os"
+
 )
 
 func TestError() {
@@ -27,5 +29,14 @@ func TestError() {
 	} else {
 		fmt.Println(file2.Name() + " opened succesfully")
 	}
+	fmt.Println("                                    ***********             C            *********\n")
+	 // ایجاد یک خطا	 
+	sampleErr1 := errors.New("error occured")
+	fmt.Println(sampleErr1)
+
+ 	// fmt	 ایجاد یک خطا با //	
+	msg := "database connection issue"
+	sampleErr2 := fmt.Errorf("Err is: %s", msg) 
+	fmt.Println(sampleErr2)
 	fmt.Println("----------------------------------------End Error  ----------------------------------------")
 }

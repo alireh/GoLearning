@@ -3,6 +3,7 @@ package basic
 import (
 	"errors"
 	"fmt"
+
 )
 
 type inputError struct {
@@ -33,18 +34,6 @@ func TestAdvancedError() {
 	fmt.Println("----------------------------------------Start Advanced Error----------------------------------------")
 
 	fmt.Println("                                    ***********             A            *********\n")
-
-	//ایجاد خطا با محتوای دلخواه
-	sampleErr := errors.New("error occured")
-
-	fmt.Println(sampleErr)
-
-	msg := "database connection issue"
-	sampleErr1 := fmt.Errorf("Err is: %s", msg)
-
-	fmt.Println(sampleErr1)
-	fmt.Println("                                    ***********             B            *********\n")
-
 	err := validate("", "")
 
 	if err != nil {
@@ -53,6 +42,27 @@ func TestAdvancedError() {
 			fmt.Printf("Missing Field is %s\n", err.getMissingField())
 		}
 	}
+	fmt.Println("                                    ***********             B            *********\n")
+	//wrapping error
+    err = doSomething()
+    if err != nil {
+        fmt.Println(err) //first error is : errro 1
+        fmt.Println(errors.Unwrap(err)) //errro 1
+    }
 
 	fmt.Println("----------------------------------------End Advanced Error  ----------------------------------------")
+}
+
+
+func doSomething() error {
+    err1 := doFirstThing()
+    if err1 != nil {
+        return fmt.Errorf("first error is : %w", err1)
+    }
+
+    return nil
+}
+
+func doFirstThing() error {
+    return errors.New("errro 1")
 }

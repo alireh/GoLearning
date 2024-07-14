@@ -31,5 +31,7 @@ func main() {
 	// basicFunctions.TestSlice()
 	// basicFunctions.TestMap() 
 	// basicFunctions.TestStruct() 
-	basicFunctions.TestStructPointer() 
+	// basicFunctions.TestStructPointer() 
+	// basicFunctions.TestError();
+	basicFunctions.TestAdvancedError();
 }
