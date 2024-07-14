@@ -34,5 +34,6 @@ func main() {
 	// basicFunctions.TestStructPointer() 
 	// basicFunctions.TestError();
 	// basicFunctions.TestAdvancedError();
-	basicFunctions.TestDefer()
+	// basicFunctions.TestDefer()
+	basicFunctions.TestPanic();
 }
