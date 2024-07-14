@@ -20,15 +20,16 @@ func init() {
 //بیاید نه در خط بعدی
 func main() {
 	/*TestForLoop باید با حروف بزرگ شروع شود تا پابلیک باشد*/
-	// basic.TestForLoop()
-	// basic.TestRange()
-	// basic.TestLabeledLoop()
-	// basic.TestContinueInLoop()
-	// basic.TestSwitchStatement()
-	// basic.TestVariable()
+	// basicFunctions.TestForLoop()
+	// basicFunctions.TestRange()
+	// basicFunctions.TestLabeledLoop()
+	// basicFunctions.TestContinueInLoop()
+	// basicFunctions.TestSwitchStatement()
+	// basicFunctions.TestVariable()
 	// basicFunctions.TestFunction()
 	// basicFunctions.TestArray()
 	// basicFunctions.TestSlice()
 	// basicFunctions.TestMap() 
-	basicFunctions.TestStruct() 
+	// basicFunctions.TestStruct() 
+	basicFunctions.TestStructPointer() 
 }
