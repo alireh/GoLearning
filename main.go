@@ -37,5 +37,6 @@ func main() {
 	// basicFunctions.TestDefer();
 	// basicFunctions.TestPanic();
 	// basicFunctions.TestTypeAssertion()
-	basicFunctions.TestContext()
+	// basicFunctions.TestContext()
+	basicFunctions.TestChannel()
 }
