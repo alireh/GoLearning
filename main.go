@@ -45,5 +45,6 @@ func main() {
 	// basicFunctions.TestMutex();
 	// basicFunctions.TestGenerics();
 	// basicFunctions.TestGoroutine()
-	basicFunctions.TestPointer()
+	// basicFunctions.TestPointer()
+	basicFunctions.TestMarshaling()
 }
