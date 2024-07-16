@@ -1,0 +1,44 @@
+In Go, a scheduler manages the execution of goroutines (lightweight threads) across available CPUs. Go's runtime scheduler automatically distributes goroutines onto OS threads and manages their execution. However, you can control some aspects of scheduling through techniques like goroutine prioritization or using a custom scheduler.
+
+Here’s a basic example to illustrate how goroutines are scheduled and how you can control their execution order using channels:
+
+worker Function: Represents a worker that processes jobs from a channel. It simulates work with a busy loop
+ (for i := 0; i < 100000000; i++) to represent some CPU-bound task.
+
+Main Function:
+
+Number of Workers: runtime.NumCPU() retrieves the number of logical CPUs available, which is used
+ to determine the number of worker goroutines to create.
+
+Channels: jobs is a buffered channel used to send jobs to workers. The buffer size is numJobs to allow asynchronous 
+sending of jobs without blocking.
+
+WaitGroup: sync.WaitGroup is used to wait for all goroutines (workers) to finish before exiting the main function.
+
+Starting Workers: A loop starts numWorkers goroutines, each executing the worker function with its ID
+, the jobs channel to receive jobs from, and a reference to the WaitGroup.
+
+Sending Jobs: Another loop sends numJobs jobs to the jobs channel. Each job is an integer value representing a task.
+
+Closing Channels: close(jobs) indicates that no more jobs will be sent to the jobs channel,
+ allowing workers to finish processing when the channel is empty.
+
+Waiting for Completion: wg.Wait() blocks until all workers have called wg.Done(),
+ meaning they have finished processing all jobs.
+
+Notes:
+Concurrency: Go’s scheduler manages the execution of goroutines across multiple OS threads, 
+utilizing all available CPUs efficiently.
+
+Channel Buffering: Buffered channels (jobs channel with capacity numJobs) allow decoupling of job production 
+(sending) and consumption (receiving), enabling concurrent execution.
+
+WaitGroup: sync.WaitGroup is a synchronization primitive for waiting for a collection of goroutines to finish.
+ It ensures that the main goroutine doesn't exit before all workers have completed their tasks.
+
+Simulated Work: The busy loop (for i := 0; i < 100000000; i++) in worker simulates a CPU-bound task.
+ In a real scenario, this could be replaced with actual computation or I/O operations.
+
+This example demonstrates basic scheduler usage in Go by leveraging goroutines, channels, 
+and synchronization primitives to manage concurrent execution of tasks across available CPU cores. 
+Adjust numJobs and the simulated workload (worker function) according to your specific requirements.
