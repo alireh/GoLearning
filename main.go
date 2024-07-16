@@ -36,11 +36,12 @@ func main() {
 	// basicFunctions.TestAdvancedError();
 	// basicFunctions.TestDefer();
 	// basicFunctions.TestPanic();
-	// basicFunctions.TestTypeAssertion()
-	// basicFunctions.TestContext()
-	// basicFunctions.TestChannel()
-	// basicFunctions.TestSelect()
-	// basicFunctions.TestBuffer()
-	// basicFunctions.TestScheduler()
-	basicFunctions.TestMutex()
+	// basicFunctions.TestTypeAssertion();
+	// basicFunctions.TestContext();
+	// basicFunctions.TestChannel();
+	// basicFunctions.TestSelect();
+	// basicFunctions.TestBuffer();
+	// basicFunctions.TestScheduler();
+	// basicFunctions.TestMutex();
+	basicFunctions.TestGenerics()
 }
