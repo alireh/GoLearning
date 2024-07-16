@@ -39,5 +39,6 @@ func main() {
 	// basicFunctions.TestTypeAssertion()
 	// basicFunctions.TestContext()
 	// basicFunctions.TestChannel()
-	basicFunctions.TestSelect()
+	// basicFunctions.TestSelect()
+	basicFunctions.TestBuffer()
 }
