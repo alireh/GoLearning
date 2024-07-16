@@ -43,5 +43,6 @@ func main() {
 	// basicFunctions.TestBuffer();
 	// basicFunctions.TestScheduler();
 	// basicFunctions.TestMutex();
-	basicFunctions.TestGenerics()
+	// basicFunctions.TestGenerics();
+	basicFunctions.TestGoroutine()
 }
