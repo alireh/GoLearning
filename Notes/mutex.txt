@@ -1,0 +1,18 @@
+Certainly! In Go, synchronization between goroutines is typically achieved using channels or sync primitives 
+like mutexes. Here's a basic example of how you can use a mutex to synchronize access to shared data
+
+
+
+SafeCounter is a struct that contains a sync.Mutex and a map count to store integer 
+counts associated with string keys.
+Inc(key string) method increments the counter for a given key. It uses c.mu.Lock()
+ to acquire the lock before modifying the map and c.mu.Unlock() 
+to release the lock after modification.
+Value(key string) method retrieves the current value of the counter for a given key. It also uses locking 
+to ensure safe access to the map.
+In main(), we create an instance of SafeCounter and launch 10 goroutines concurrently. 
+Each goroutine calls Inc("somekey") 1000 times.
+We use time.Sleep(time.Second) to give some time for all goroutines to finish their work before printing
+ the final count using counter.Value("somekey").
+This ensures that concurrent access to the count map is synchronized using the mutex (c.mu), preventing
+race conditions and ensuring safe access to shared data across goroutines.

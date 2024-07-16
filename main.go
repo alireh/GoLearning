@@ -41,5 +41,6 @@ func main() {
 	// basicFunctions.TestChannel()
 	// basicFunctions.TestSelect()
 	// basicFunctions.TestBuffer()
-	basicFunctions.TestScheduler()
+	// basicFunctions.TestScheduler()
+	basicFunctions.TestMutex()
 }
