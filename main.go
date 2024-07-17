@@ -48,11 +48,12 @@ func main() {
 	// basicFunctions.TestScheduler();
 	// basicFunctions.TestMutex();
 	// basicFunctions.TestGenerics();
-	// basicFunctions.TestGoroutine()
-	// basicFunctions.TestPointer()
+	// basicFunctions.TestGoroutine();
+	// basicFunctions.TestPointer();
 	// deeperFunctions.TestMarshaling()
 	// cliFunctions.TestCobra();
 	// ormFunctions.TestGorm();
 	// webFrameworkFunctions.TestGin();
-	webFrameworkFunctions.TestGinPostgres()
+	// webFrameworkFunctions.TestGinPostgres();
+	webFrameworkFunctions.TestGofiber()
 }
