@@ -2,7 +2,8 @@
 package main
 
 //basicFunctions is alias
-import basicFunctions "learning/basic"
+// import basicFunctions "learning/basic"
+import deeperFunctions "learning/deeper"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
@@ -46,5 +47,5 @@ func main() {
 	// basicFunctions.TestGenerics();
 	// basicFunctions.TestGoroutine()
 	// basicFunctions.TestPointer()
-	basicFunctions.TestMarshaling()
+	deeperFunctions.TestMarshaling()
 }

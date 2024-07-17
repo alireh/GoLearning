@@ -1,4 +1,4 @@
-package basic
+package deeper
 
 import (
 	"encoding/json"
