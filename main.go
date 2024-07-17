@@ -53,5 +53,6 @@ func main() {
 	// deeperFunctions.TestMarshaling()
 	// cliFunctions.TestCobra();
 	// ormFunctions.TestGorm();
-	webFrameworkFunctions.TestGin()
+	// webFrameworkFunctions.TestGin();
+	webFrameworkFunctions.TestGinPostgres()
 }
