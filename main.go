@@ -5,7 +5,8 @@ package main
 // import basicFunctions "learning/basic"
 // import deeperFunctions "learning/deeper"
 // import cliFunctions "learning/cli"
-import ormFunctions "learning/orm"
+// import ormFunctions "learning/orm"
+import webFrameworkFunctions "learning/webFramework"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
@@ -51,5 +52,6 @@ func main() {
 	// basicFunctions.TestPointer()
 	// deeperFunctions.TestMarshaling()
 	// cliFunctions.TestCobra();
-	ormFunctions.TestGorm();
+	// ormFunctions.TestGorm();
+	webFrameworkFunctions.TestGin()
 }
