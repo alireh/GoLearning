@@ -9,6 +9,11 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
+//Installation commands
+//go get github.com/gin-gonic/gin
+//go get -u github.com/jinzhu/gorm
+//go get -u github.com/jinzhu/gorm/dialects/postgres
+
 // User represents a user in the database
 type User struct {
 	ID    uint   `json:"id" gorm:"primary_key"`
