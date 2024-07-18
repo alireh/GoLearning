@@ -8,7 +8,8 @@ package main
 // import ormFunctions "learning/orm"
 // import webFrameworkFunctions "learning/webFramework"
 // import loggingFunctions "learning/logging"
-import restFunctions "learning/ApiClients/rest"
+// import restFunctions "learning/ApiClients/rest"
+import restFunctions "learning/realtimeCommunication"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
@@ -62,5 +63,6 @@ func main() {
 	// loggingFunctions.TestZerolog();
 	// loggingFunctions.TestZap();
 	// loggingFunctions.TestLog();
-	restFunctions.TestHeimdall()
+	// restFunctions.TestHeimdall()
+	restFunctions.TestMelody()
 }
