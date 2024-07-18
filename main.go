@@ -58,5 +58,6 @@ func main() {
 	// webFrameworkFunctions.TestGinPostgres();
 	// webFrameworkFunctions.TestGofiber();
 	// webFrameworkFunctions.TestGorilla()
-	loggingFunctions.TestZerolog()
+	// loggingFunctions.TestZerolog()
+	loggingFunctions.TestZap()
 }
