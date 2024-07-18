@@ -35,7 +35,7 @@ func main() {
 	// basicFunctions.TestSlice();
 	// basicFunctions.TestMap();
 	// basicFunctions.TestStruct();
-	// basicFunctions.TestStructPointer()
+	// basicFunctions.TestStructPointer();
 	// basicFunctions.TestError();
 	// basicFunctions.TestAdvancedError();
 	// basicFunctions.TestDefer();
@@ -50,10 +50,11 @@ func main() {
 	// basicFunctions.TestGenerics();
 	// basicFunctions.TestGoroutine();
 	// basicFunctions.TestPointer();
-	// deeperFunctions.TestMarshaling()
+	// deeperFunctions.TestMarshaling();
 	// cliFunctions.TestCobra();
 	// ormFunctions.TestGorm();
 	// webFrameworkFunctions.TestGin();
 	// webFrameworkFunctions.TestGinPostgres();
-	webFrameworkFunctions.TestGofiber()
+	// webFrameworkFunctions.TestGofiber();
+	webFrameworkFunctions.TestGorilla()
 }
