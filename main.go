@@ -9,7 +9,7 @@ package main
 // import webFrameworkFunctions "learning/webFramework"
 // import loggingFunctions "learning/logging"
 // import restFunctions "learning/ApiClients/rest"
-import restFunctions "learning/realtimeCommunication"
+import realtimeCommunicationFunctions "learning/realtimeCommunication"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
@@ -64,5 +64,5 @@ func main() {
 	// loggingFunctions.TestZap();
 	// loggingFunctions.TestLog();
 	// restFunctions.TestHeimdall()
-	restFunctions.TestMelody()
+	realtimeCommunicationFunctions.TestMelody()
 }
