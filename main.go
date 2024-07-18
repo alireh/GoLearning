@@ -6,7 +6,8 @@ package main
 // import deeperFunctions "learning/deeper"
 // import cliFunctions "learning/cli"
 // import ormFunctions "learning/orm"
-import webFrameworkFunctions "learning/webFramework"
+// import webFrameworkFunctions "learning/webFramework"
+import loggingFunctions "learning/logging"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
@@ -56,5 +57,6 @@ func main() {
 	// webFrameworkFunctions.TestGin();
 	// webFrameworkFunctions.TestGinPostgres();
 	// webFrameworkFunctions.TestGofiber();
-	webFrameworkFunctions.TestGorilla()
+	// webFrameworkFunctions.TestGorilla()
+	loggingFunctions.TestZerolog()
 }
