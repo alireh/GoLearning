@@ -8,7 +8,7 @@ package main
 // import ormFunctions "learning/orm"
 // import webFrameworkFunctions "learning/webFramework"
 // import loggingFunctions "learning/logging"
-import restFunctions "learning/rest"
+import restFunctions "learning/ApiClients/rest"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
