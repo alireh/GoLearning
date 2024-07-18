@@ -7,7 +7,8 @@ package main
 // import cliFunctions "learning/cli"
 // import ormFunctions "learning/orm"
 // import webFrameworkFunctions "learning/webFramework"
-import loggingFunctions "learning/logging"
+// import loggingFunctions "learning/logging"
+import restFunctions "learning/rest"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
@@ -60,5 +61,6 @@ func main() {
 	// webFrameworkFunctions.TestGorilla();
 	// loggingFunctions.TestZerolog();
 	// loggingFunctions.TestZap();
-	loggingFunctions.TestLog()
+	// loggingFunctions.TestLog();
+	restFunctions.TestHeimdall()
 }
