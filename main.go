@@ -10,7 +10,7 @@ package main
 // import loggingFunctions "learning/logging"
 // import restFunctions "learning/ApiClients/rest"
 // import realtimeCommunicationFunctions "learning/realtimeCommunication"
-import microservicesToolsFunctions "learning/microservicesTools"
+import microservicesToolsFunctions "learning/microservicesTools/goKit"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
@@ -66,5 +66,6 @@ func main() {
 	// loggingFunctions.TestLog();
 	// restFunctions.TestHeimdall();
 	// realtimeCommunicationFunctions.TestMelody();
-	microservicesToolsFunctions.TestRpcx()
+	// microservicesToolsFunctions.TestRpcx();
+	microservicesToolsFunctions.TestGoKit()
 }
