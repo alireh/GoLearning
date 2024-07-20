@@ -11,7 +11,8 @@ package main
 // import restFunctions "learning/ApiClients/rest"
 // import realtimeCommunicationFunctions "learning/realtimeCommunication"
 // import microservicesToolsGoKitFunctions "learning/microservicesTools/goKit"
-import microservicesToolsFunctions "learning/microservicesTools"
+// import microservicesToolsFunctions "learning/microservicesTools"
+import graphQLFunctions "learning/ApiClients/graphQL"
 
 //اگر بخواهیم کدی قبل از main اجرا شود
 func init() {
@@ -69,5 +70,6 @@ func main() {
 	// realtimeCommunicationFunctions.TestMelody();
 	// microservicesToolsFunctions.TestRpcx();
 	// microservicesToolsGoKitFunctions.TestGoKit()
-	microservicesToolsFunctions.TestMicro()
+	// microservicesToolsFunctions.TestMicro();
+	graphQLFunctions.TestGraphqlGo();
 }
